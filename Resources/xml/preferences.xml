@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<EditTextPreference
+		android:defaultValue="@string/default_ip"
+	    android:key="server_ip"
+	    android:title="Server IP"
+	    android:summary="Die IP adres van die server"   
+	    android:inputType="textUri"
+	    />
+
+	<EditTextPreference
+		android:defaultValue="@string/default_api_key"
+	    android:key="api_key"
+	    android:title="API key"
+	    android:summary="Die sleutel vir toegang tot die data"   
+	    android:inputType="textPassword"
+	    />
+
+	<EditTextPreference
+	    android:key="max_number"
+	    android:title="Aantal bieërs"
+		android:defaultValue="75"
+	    android:summary="Die hoogste bodnommer wat die stelsel moet kan hanteer"   
+	    android:inputType="number"
+	    />
+
+</PreferenceScreen>

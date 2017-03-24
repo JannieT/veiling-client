@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<color name="light_panel">#ffffff</color>
+	<color name="screen_panel">#1e000000</color>
+	<color name="text_primary">#505050</color>
+	<color name="text_secondary">#c0c0c0</color>
+	<color name="tint">#3949AB</color>
+
+
+	<style name="primary_text" parent="@android:style/TextAppearance">
+		<item name="android:textColor">@color/text_primary</item>
+	</style>
+
+	<style name="Veiling" parent="Veiling.Base">
+	</style>
+
+	<!-- Base theme applied no matter what API -->
+	<style name="Veiling.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="windowNoTitle">true</item>
+		<!--We will be using the toolbar so no need to show ActionBar-->
+		<item name="windowActionBar">false</item>
+		<!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
+		<!-- colorPrimary is used for the default action bar background -->
+		<item name="colorPrimary">#8BC34A</item>
+		<!-- colorPrimaryDark is used for the status bar -->
+		<item name="colorPrimaryDark">#558B2F</item>
+		<!-- colorAccent is used as the default value for colorControlActivated
+         which is used to tint widgets -->
+		<item name="colorAccent">#3949AB</item>
+		<!-- You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight and colorSwitchThumbNormal. -->
+	</style>
+</resources>

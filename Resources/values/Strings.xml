@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Veiling</string>
+	<string name="mode_registrasie">Registrasie</string>
+	<string name="mode_betaal">Betaalpunt</string>
+	<string name="default_ip">http://192.168.0.9</string>
+	<string name="default_api_key">secret</string>
+</resources>

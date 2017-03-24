@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Xamarin.Build.Download.0.4.2\build\Xamarin.Build.Download.props" Condition="Exists('packages\Xamarin.Build.Download.0.4.2\build\Xamarin.Build.Download.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B452B2BC-1866-407D-902B-89657EFAB0FC}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Veiling</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <AssemblyName>Veiling</AssemblyName>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidTlsProvider></AndroidTlsProvider>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <ReleaseVersion>3.1</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__ANDROID__;__MOCK__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyStore>/Users/jannie/Desktop/veiling.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>2Tim2.22</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>veiling</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>2Tim2.22</AndroidSigningKeyPass>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+<AndroidKeyStore>True</AndroidKeyStore>
+<AndroidSigningKeyStore>/Users/jannie/Desktop/veiling.keystore</AndroidSigningKeyStore>
+<AndroidSigningStorePass>2Tim2.22</AndroidSigningStorePass>
+<AndroidSigningKeyAlias>veiling</AndroidSigningKeyAlias>
+<AndroidSigningKeyPass>2Tim2.22</AndroidSigningKeyPass>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Xamarin.Controls.FlipNumbers.Android">
+      <HintPath>Components\flipnumbers-1.0\lib\android\Xamarin.Controls.FlipNumbers.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Compat">
+      <HintPath>packages\Xamarin.Android.Support.Compat.25.1.1\lib\MonoAndroid70\Xamarin.Android.Support.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.UI">
+      <HintPath>packages\Xamarin.Android.Support.Core.UI.25.1.1\lib\MonoAndroid70\Xamarin.Android.Support.Core.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Core.Utils">
+      <HintPath>packages\Xamarin.Android.Support.Core.Utils.25.1.1\lib\MonoAndroid70\Xamarin.Android.Support.Core.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Media.Compat">
+      <HintPath>packages\Xamarin.Android.Support.Media.Compat.25.1.1\lib\MonoAndroid70\Xamarin.Android.Support.Media.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Fragment">
+      <HintPath>packages\Xamarin.Android.Support.Fragment.25.1.1\lib\MonoAndroid70\Xamarin.Android.Support.Fragment.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>packages\Xamarin.Android.Support.v4.25.1.1\lib\MonoAndroid70\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Vector.Drawable">
+      <HintPath>packages\Xamarin.Android.Support.Vector.Drawable.25.1.1\lib\MonoAndroid70\Xamarin.Android.Support.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
+      <HintPath>packages\Xamarin.Android.Support.Animated.Vector.Drawable.25.1.1\lib\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>packages\Xamarin.Android.Support.v7.AppCompat.25.1.1\lib\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="AndHUD">
+      <HintPath>packages\AndHUD.1.2.0\lib\MonoAndroid\AndHUD.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VeilingItem.cs" />
+    <Compile Include="VeilingListAdapter.cs" />
+    <Compile Include="BackendService.cs" />
+    <Compile Include="Const.cs" />
+    <Compile Include="LotListView.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="ListListener.cs" />
+    <Compile Include="PrefsFragment.cs" />
+    <Compile Include="SettingsActivity.cs" />
+    <Compile Include="BieerItem.cs" />
+    <Compile Include="Exceptions\FeedbackException.cs" />
+    <Compile Include="Exceptions\AuthenticationException.cs" />
+    <Compile Include="Exceptions\ItemNotFoundException.cs" />
+    <Compile Include="Exceptions\NoNetworkException.cs" />
+    <Compile Include="Exceptions\ValidationException.cs" />
+    <Compile Include="Exceptions\ForbiddenException.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\layout\ItemRy.xml" />
+    <AndroidResource Include="Resources\drawable\item_color.xml" />
+    <AndroidResource Include="Resources\layout\Toolbar.xml" />
+    <AndroidResource Include="Resources\values-v21\styles.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_fetch.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_send.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_fetch.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_send.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_fetch.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_send.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_fetch.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_send.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_action_fetch.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_action_send.png" />
+    <AndroidResource Include="Resources\menu\home.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_action_settings.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_action_settings.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_action_settings.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_action_settings.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_action_settings.png" />
+    <AndroidResource Include="Resources\xml\preferences.xml" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\drawable\temp.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\photo.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\photo_in.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\photo_sent.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\photo.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\photo_in.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\photo_sent.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\photo.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\photo_in.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\photo_sent.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\photo.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\photo_in.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\photo_sent.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\photo.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\photo_in.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\photo_sent.png" />
+    <AndroidResource Include="Resources\drawable\photo_button.xml" />
+    <AndroidResource Include="Resources\menu\betaal.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <XamarinComponentReference Include="flipnumbers">
+      <Version>1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mockdata.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\values-v21\" />
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Resources\xml\" />
+    <Folder Include="Exceptions\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="packages\Xamarin.Build.Download.0.4.2\build\Xamarin.Build.Download.targets" Condition="Exists('packages\Xamarin.Build.Download.0.4.2\build\Xamarin.Build.Download.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Compat.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets" Condition="Exists('packages\Xamarin.Android.Support.Compat.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Core.UI.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Core.UI.targets" Condition="Exists('packages\Xamarin.Android.Support.Core.UI.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Core.UI.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Core.Utils.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Core.Utils.targets" Condition="Exists('packages\Xamarin.Android.Support.Core.Utils.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Core.Utils.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Media.Compat.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Media.Compat.targets" Condition="Exists('packages\Xamarin.Android.Support.Media.Compat.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Media.Compat.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Fragment.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Fragment.targets" Condition="Exists('packages\Xamarin.Android.Support.Fragment.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Fragment.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.v4.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.v4.targets" Condition="Exists('packages\Xamarin.Android.Support.v4.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.v4.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Vector.Drawable.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('packages\Xamarin.Android.Support.Vector.Drawable.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Vector.Drawable.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.Animated.Vector.Drawable.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.targets" Condition="Exists('packages\Xamarin.Android.Support.Animated.Vector.Drawable.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.Animated.Vector.Drawable.targets')" />
+  <Import Project="packages\Xamarin.Android.Support.v7.AppCompat.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.targets" Condition="Exists('packages\Xamarin.Android.Support.v7.AppCompat.25.1.1\build\MonoAndroid70\Xamarin.Android.Support.v7.AppCompat.targets')" />
+</Project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/light_panel">
+    <TextView
+        android:id="@+id/itemNommer"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:textColor="#ff000000"
+        android:layout_gravity="top"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/itemBeskrywing"
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:textColor="@drawable/item_color"
+        android:layout_gravity="top" />
+    <TextView
+        android:id="@+id/itemBedrag"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:textSize="18sp"
+        android:textColor="@drawable/item_color"
+        android:layout_gravity="top"
+        android:gravity="right" />
+</LinearLayout>

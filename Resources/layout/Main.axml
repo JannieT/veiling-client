@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/btnMode"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            local:showText="false"
+            android:checked="true" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbar">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/btnMinus"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:text="-"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true" />
+            <FlipNumbers.FlipNumbersView
+                digits_count="2"
+                android:id="@+id/flipNumbersView"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnPlus"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:text="+"
+                android:background="@null"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true" />
+        </LinearLayout>
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/barNommer"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:max="200"
+            android:progress="0"
+            android:progressTint="?attr/colorAccent"
+            android:thumbTint="?attr/colorAccent"
+            android:thumbTintMode="src_in" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/panelResult"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                android:padding="5dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:id="@+id/lblNaam"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:id="@+id/lblTotaal"
+                        android:layout_width="250dp"
+                        android:layout_height="match_parent"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="Totaal:" />
+                    <TextView
+                        android:id="@+id/txtTotaal"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:text="R 50.00"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <Veiling.LotListView
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:id="@+id/listItems" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/panelRegister"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                android:gravity="center_horizontal"
+                android:padding="5dp">
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnCamera"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Neem Foto" />
+            <!--                    android:layout_gravity="center_horizontal"-->
+                <Button
+                    android:id="@+id/btnPhoto"
+                    android:layout_width="250dp"
+                    android:layout_height="93dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/photo_button" />
+            <!--                    android:layout_gravity="center_horizontal"-->
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/panelHome"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="visible"
+                android:gravity="center"
+                android:padding="5dp">
+                <Button
+                    android:id="@+id/btnPing"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Ping" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veiling", "Veiling.csproj", "{B452B2BC-1866-407D-902B-89657EFAB0FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6A18AE57-178B-4612-9739-53636B1294D6}"
+	ProjectSection(SolutionItems) = preProject
+		MainActivity.cs = MainActivity.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B452B2BC-1866-407D-902B-89657EFAB0FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B452B2BC-1866-407D-902B-89657EFAB0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B452B2BC-1866-407D-902B-89657EFAB0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B452B2BC-1866-407D-902B-89657EFAB0FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Veiling.csproj
+		version = 3.1
+	EndGlobalSection
+EndGlobal

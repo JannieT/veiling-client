@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/betaal_kontant"
+          android:title="Kontant" />    
+    <item android:id="@+id/betaal_eft"
+          android:title="EFT" />  
+    <item android:id="@+id/herstel"
+          android:title="Begin oor" />    
+    <item android:id="@+id/sommer_niks"
+          android:title="Sommer niks" />
+</menu>
